@@ -1,0 +1,63 @@
+@import "./var";
+html {
+  background-color: @body-background-color;
+}
+
+.main {
+  min-width: 1000px;
+  width: 1000px;
+  position: relative;
+  height: 100px;
+  margin: 0 auto;
+}
+
+/* header */
+.header {
+  height: 100px;
+  background-color: #9a0a0d;
+  overflow: hidden;
+  color: #fff;
+}
+
+.header .left {
+  float: left;
+  position: relative;
+  line-height: 100px;
+}
+
+.header .logo {
+  float: left;
+  height: 62px;
+  width: 62px;
+  background: url("../images/logo.png") 0 0 no-repeat;
+  margin-top: 19px;
+}
+
+.header .name {
+  float: left;
+  margin: 0 12px 0 18px;
+  font-weight: bold;
+}
+
+.header .sub-name {
+  float: left;
+  font-size: 13px;
+}
+
+.header .right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -23px;
+  font-weight: bold;
+}
+
+.header .tel-name {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.header .tel {
+  font-size: 28px;
+  line-height: 28px;
+}
