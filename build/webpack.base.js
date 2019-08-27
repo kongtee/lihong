@@ -1,6 +1,7 @@
 const path = require('path');
 const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const HtmlWebpackPlugin = require('html-withimg-loader');
 
 console.log('NODE_ENV:', process.env.NODE_ENV);
 console.log('============================start===============================');
@@ -74,8 +75,11 @@ module.exports = {
                             loader: 'less-loader'
                         }
                     ]
-            }
-            ,
+            },
+            {
+                test: /\.(htm|html)$/i,
+                use:[ 'html-withimg-loader']
+            },
             {
                 test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
                 use:
@@ -84,7 +88,7 @@ module.exports = {
                             loader: 'url-loader',
                             options: {
                                 limit: 10000,
-                                outputPath: 'static/images/'
+                                outputPath: './static/images/'
                             }
                         }
                     ]

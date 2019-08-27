@@ -37,11 +37,13 @@ html {
   float: left;
   margin: 0 12px 0 18px;
   font-weight: bold;
+  font-size: 26px;
 }
 
 .header .sub-name {
   float: left;
-  font-size: 13px;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 .header .right {
@@ -60,4 +62,38 @@ html {
 .header .tel {
   font-size: 28px;
   line-height: 28px;
+}
+
+/* 导航 */
+.nav {
+  background-color: #e4e4e4;
+}
+
+.nav .nav-list {
+  position: relative;
+  margin: 0 auto;
+  height: 50px;
+  line-height: 50px;
+}
+
+.nav .item {
+  float: left;
+  width: 125px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.nav .item a {
+  color: #1e1e1e;
+}
+
+.nav .item:hover,
+.nav .cur {
+  background-color: #9a0a0d;
+}
+
+.nav .item:hover a,
+.nav .cur a {
+  color: #fff;
+  font-weight: bold;
 }

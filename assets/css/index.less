@@ -1,3 +1,123 @@
 @import "../common/reset";
 @import "../common/pub";
 
+/* 广告 */
+.ad {
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ad .ad-bg {
+  position: absolute;
+  height: 400px;
+  top: 0;
+  left: 50%;
+  margin-left: -960px;
+}
+
+/* 新闻动态 */
+.news {
+  background-color: #e0ccb2;
+  padding-top: 70px;
+  height: 500px;
+}
+
+.news .news-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  color: #9a0a0d;
+  line-height: 50px;
+}
+
+.news .news-imglist {
+  position: relative;
+  margin: 50px 0;
+  height: 200px;
+  overflow: hidden;
+}
+
+.news .news-imglist-left {
+  float: left;
+  background-color: red;
+  width: 20px;
+  height: 20px;
+}
+
+.news .news-imglist-container{
+  float: left;
+  width: 900px;
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+}
+
+.news .news-imglist-wrap {
+  width: 2000px;
+  height: 200px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.news .news-imglist-right {
+  float: left;
+  background-color: red;
+  width: 20px;
+  height: 20px;
+}
+
+.news .news-imglist-wrap .news-img {
+  float: left;
+  margin: 0 10px;
+  height: 200px;
+  width: 278px;
+}
+
+.news .news-textlist {
+  position: relative;
+  height: 200px;
+}
+
+.news .news-events {
+  float: left;
+  width: 499px;
+}
+
+.news .news-sep {
+  width: 1px;
+  float: left;
+  height: 50px;
+}
+}
+
+.news .news-dynamic {
+  float: left;
+  width: 500px;
+}
+
+.news .events-title,
+.news .dynamic-title {
+  border-left: 4px solid #903827;
+  padding-left: 3px;
+  font-size: 26px;
+  color: #903827;
+}
+
+.news .events-item {
+  position: relative;
+}
+
+.news .news-intro {
+  float: left;
+  color: #3b3b3b;
+  line-height: 22px;
+}
+
+.news .news-date {
+  float: right;
+  color: #666;
+  line-height: 22px;
+}
