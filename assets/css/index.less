@@ -19,8 +19,8 @@
 /* 新闻动态 */
 .news {
   background-color: #e0ccb2;
-  padding-top: 70px;
-  height: 628px;
+  padding: 70px 0 39px;
+  overflow: hidden;
 }
 
 .news .news-title {
@@ -79,46 +79,48 @@
 
 .news .news-textlist {
   position: relative;
-  height: 200px;
+  height: 216px;
 }
 
 .news .news-events {
   float: left;
-  width: 480px;
+  width: 464px;
 }
 
 .news .news-sep {
   width: 1px;
   float: left;
-  height: 214px;
+  height: 168px;
   background-color: #d2c3ad;
-  margin: 30px 25px 0 14px;
+  margin: 50px 35px 0 35px;
 }
 
 .news .news-dynamic {
   float: left;
-  width: 480px;
+  width: 465px;
   position: relative;
 }
 
 .news .events-title,
 .news .dynamic-title {
   border-left: 4px solid #903827;
-  padding-left: 3px;
+  padding-left: 10px;
   font-size: 26px;
   line-height: 26px;
   color: #903827;
+  margin-bottom: 11px;
 }
 
 .news .events-item {
   position: relative;
+  overflow: hidden;
+  line-height: 38px;
 }
 
-.news .news-intro {
+.news .news-intro a {
   float: left;
   color: #3b3b3b;
-  line-height: 46px;
-  width: 330px;
+  width: 349px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -127,7 +129,6 @@
 .news .news-date {
   float: right;
   color: #666;
-  line-height: 46px;
 }
 
 /* 介绍 */
@@ -168,15 +169,22 @@
   overflow: hidden;
 }
 
+.intro .intro-jidi-item a {
+  display: block;
+  width: 380px;
+  height: 285px;
+  overflow: hidden;
+}
+
 .intro .intro-jidi-small {
   width: 308px;
 }
 
 /* 红色记忆 */
 .remember {
-  background-color: #d2c3ad;
-  padding: 80px 0;
-  height: 632px;
+  background: url("../images/bg_hsjy.jpg") center center no-repeat;
+  overflow: hidden;
+  height: 817px;
 }
 
 .remember .remember-title {
@@ -184,7 +192,7 @@
   font-size: 36px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 50px;
+  margin: 80px 0 50px;
 }
 
 .remember .remember-list {
@@ -220,8 +228,7 @@
 /* 红色讲堂 */
 .study {
   background-color: #e0ccb2;
-  padding: 70px 0;
-  height: 551px;
+  padding: 70px 0 59px;
 }
 
 .study .study-title {
@@ -262,21 +269,19 @@
 .study .study-sub-title {
   color: @sub-title-color;
   font-size: 24px;
-}
-
-.study .study-list {
-  height: 378px;
+  margin-bottom: 11px;
 }
 
 .study .study-item {
   position: relative;
+  overflow: hidden;
+  line-height: 38px;
 }
 
-.study .news-intro {
+.study .news-intro a {
   float: left;
   color: #3b3b3b;
-  line-height: 46px;
-  width: 330px;
+  width: 349px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -285,17 +290,6 @@
 .study .news-date {
   float: right;
   color: #666;
-  line-height: 46px;
-}
-
-.study .study-all {
-  background-color: #cdac82;
-  height: 40px;
-  line-height: 40px;
-  width: 460px;
-  display: block;
-  text-align: center;
-  color: #3b3b3b;
 }
 
 /* 其他 */
@@ -367,7 +361,7 @@
   font-size: 14px;
   color: #999;
   float: left;
-  width: 25%;
+  width: 270px;
 }
 
 .foot-qrcodebox {
