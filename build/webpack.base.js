@@ -1,6 +1,7 @@
 const path = require('path');
 const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const router = require('../router/index');
 // const HtmlWebpackPlugin = require('html-withimg-loader');
 
 console.log('NODE_ENV:', process.env.NODE_ENV);
@@ -11,9 +12,37 @@ function resolve(dir) {
     return path.join(__dirname, '..', dir);
 }
 
+function getHtmlArray(moduleExportsPlugins) {
+
+    // 根据模板配置生成 HtmlWebpackPlugin 需要的配置
+    const getHtmlConfig = function (name, chunks, title) {
+        return {
+            filename: resolve(`./www/${name}.html`),
+            template: `./${name}.html`,
+            // favicon: './src/assets/images/public/favicon.ico',
+            title,
+            inject: true,
+            hash: true, // 开启hash
+            chunks, // 页面要引入的包
+            minify: process.env.NODE_ENV === 'development' ? false : {
+                removeComments: true, // 移除HTML中的注释
+                collapseWhitespace: true, // 折叠空白区域 也就是压缩代码
+                removeAttributeQuotes: true, // 去除属性引用
+            },
+        };
+    };
+
+    // 循环创建模板配置
+    router.forEach((element) => {
+        const {_html, chunks, title} = element;
+        moduleExportsPlugins.push(new HtmlWebpackPlugin(getHtmlConfig(_html, chunks, title)));
+    })
+}
+
 module.exports = {
     entry: {
-        index: './index.js',
+        index: './js/index.js',
+        jidi: './js/jidi.js'
     },
     output: {
         filename: 'static/js/[name]-[hash:5].js',
@@ -37,6 +66,10 @@ module.exports = {
             //     exclude: /node_modules/,
             //     loader: 'babel-loader'
             // },
+            {
+                test: /\.ejs$/,
+                loader: 'ejs-html-loader',
+            },
             {
                 test: /\.css$/,
                 use: [
@@ -78,7 +111,7 @@ module.exports = {
             },
             {
                 test: /\.(htm|html)$/i,
-                use:[ 'html-withimg-loader']
+                use: ['html-withimg-loader']
             },
             {
                 test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
@@ -120,13 +153,14 @@ module.exports = {
             filename: '[name]-[hash:5].css',
             allChunks: true // 一开始所有css都打包
         }),
-        new HtmlWebpackPlugin({
-            filename: resolve('./www/index.html'),
-            template: './index.html',
-            title: '瑞金苏区干部学院',
-            inject: true,
-            // favicon: './assets/favicon.ico'
-        })
+        // new HtmlWebpackPlugin({
+        //     filename: resolve('./www/index.html'),
+        //     template: './index.html',
+        //     title: '瑞金苏区干部学院',
+        //     inject: true,
+        //     // favicon: './assets/favicon.ico'
+        // })
     ]
 }
-;
+
+getHtmlArray(module.exports.plugins);

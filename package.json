@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "NODE_ENV=development webpack-dev-server --hot --env=dev --progress --config ./build/webpack.config.js",
+    "start": "NODE_ENV=development webpack-dev-server --env=dev --progress --config ./build/webpack.config.js",
     "dev": "NODE_ENV=development webpack --env=dev --progress --config ./build/webpack.config.js",
     "test": "NODE_ENV=production webpack --env=test --progress --config ./build/webpack.config.js",
     "prod": "NODE_ENV=production webpack --env=prod --progress --config ./build/webpack.config.js",
@@ -19,6 +19,10 @@
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.1",
+    "ejs": "^2.6.2",
+    "ejs-html-loader": "^4.0.1",
+    "ejs-loader": "^0.3.3",
+    "ejs-render-loader": "^1.0.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^2.0.0",
     "friendly-errors-webpack-plugin": "^1.7.0",
@@ -37,7 +41,7 @@
   "browserslist": [
     "last 1 version",
     "> 1%",
-    "ie 7",
+    "ie 8",
     "not dead"
   ]
 }

@@ -1,1 +1,0 @@
-require('./assets/css/index.less');
