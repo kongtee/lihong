@@ -42,7 +42,8 @@ function getHtmlArray(moduleExportsPlugins) {
 module.exports = {
     entry: {
         index: './js/index.js',
-        jidi: './js/jidi.js'
+        jidi: './js/jidi.js',
+        news: './js/news.js'
     },
     output: {
         filename: 'static/js/[name]-[hash:5].js',

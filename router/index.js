@@ -8,5 +8,10 @@ module.exports = [
         _html: 'jidi',
         title: '基地',
         chunks: ['jidi']
+    },
+    {
+        _html: 'news',
+        title: '新闻资讯',
+        chunks: ['news']
     }
 ];
