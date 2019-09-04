@@ -42,6 +42,7 @@ function getHtmlArray(moduleExportsPlugins) {
 module.exports = {
     entry: {
         index: './js/index.js',
+        school: './js/school.js',
         jidi: './js/jidi.js',
         news: './js/news.js'
     },

@@ -1,6 +1,6 @@
 require('../assets/css/index.less');
 
-import TurnPage from '../common/turnPage/turnPage';
+import TurnPage from '../common/turnPage';
 
 new TurnPage({
     box: $('#newsWrap'),                //box为要移动的元素的父元素。position: absolute;

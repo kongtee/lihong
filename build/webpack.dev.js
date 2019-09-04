@@ -25,11 +25,11 @@ module.exports = merge(BaseConfig, {
             root: path.join(__dirname, '../'),
             verbose: true  // Write logs to console.
         }),
-        new HtmlWebpackPlugin({
-            filename: resolve('./www/index.html'),
-            template: './index.html',
-            title: '瑞金苏区干部学院',
-            inject: true
-        })
+        // new HtmlWebpackPlugin({
+        //     filename: resolve('./www/index.html'),
+        //     template: './index.html',
+        //     title: '瑞金苏区干部学院',
+        //     inject: true
+        // })
     ]
 });

@@ -5,6 +5,11 @@ module.exports = [
         chunks: ['index'] // 页面用到的vendor模块
     },
     {
+        _html: 'school',
+        title: '学校介绍',
+        chunks: ['school']
+    },
+    {
         _html: 'jidi',
         title: '基地',
         chunks: ['jidi']

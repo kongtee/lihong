@@ -3,7 +3,7 @@
  * @date 2015/4/16
  * 轮播图
  * example:
- * require(['common/scroll/scrollPic'], function (scrollPic) {
+ * import TurnPage from '../common/turnPage';
  *      new scrollPic({
  *          box: $(box),                //box为要移动的元素的父元素。position: absolute;
  *          prevEle: $(prevEle),       //向左滚动按钮
@@ -20,7 +20,7 @@
  *          hideScrollBar: false,          //是否隐藏滚动按钮 （移动端使用）
  *          callback: callback           //动画结束后的回调  返回参数 {obj: 当前显示对象或者当前显示第一个对象}
  *      });
- * }
+ *
  */
 class TurnPage {
     constructor(opt) {
