@@ -18,5 +18,10 @@ module.exports = [
         _html: 'news',
         title: '新闻资讯',
         chunks: ['news']
+    },
+    {
+        _html: 'concat',
+        title: '联系我们',
+        chunks: ['concat']
     }
 ];

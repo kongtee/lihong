@@ -44,7 +44,8 @@ module.exports = {
         index: './js/index.js',
         school: './js/school.js',
         jidi: './js/jidi.js',
-        news: './js/news.js'
+        news: './js/news.js',
+        concat: './js/concat.js'
     },
     output: {
         filename: 'static/js/[name]-[hash:5].js',
@@ -53,12 +54,7 @@ module.exports = {
     },
 
     resolve: {
-        extensions: ['.js', '.json'],
-        alias: {
-            // '@Common': path.resolve(__dirname, './../common'),
-            // '@Validator': path.resolve(__dirname, './../common/validator'),
-            // '@Request': path.resolve(__dirname, './../comp/request')
-        }
+        extensions: ['.js', '.json']
     },
 
     module: {
@@ -68,10 +64,6 @@ module.exports = {
             //     exclude: /node_modules/,
             //     loader: 'babel-loader'
             // },
-            {
-                test: /\.ejs$/,
-                loader: 'ejs-html-loader',
-            },
             {
                 test: /\.css$/,
                 use: [
