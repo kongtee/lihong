@@ -11,13 +11,18 @@ module.exports = [
     },
     {
         _html: 'jidi',
-        title: '基地',
+        title: '培训基地',
         chunks: ['jidi']
     },
     {
         _html: 'news',
         title: '新闻资讯',
         chunks: ['news']
+    },
+    {
+        _html: 'media',
+        title: '媒体介绍',
+        chunks: ['media']
     },
     {
         _html: 'concat',
