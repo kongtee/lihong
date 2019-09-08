@@ -45,6 +45,7 @@ module.exports = {
         school: './js/school.js',
         jidi: './js/jidi.js',
         news: './js/news.js',
+        newsDetail: './js/newsDetail.js',
         media: './js/media.js',
         concat: './js/concat.js'
     },

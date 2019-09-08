@@ -20,6 +20,11 @@ module.exports = [
         chunks: ['news']
     },
     {
+        _html: 'newsDetail',
+        title: '新闻资讯-详情页',
+        chunks: ['newsDetail']
+    },
+    {
         _html: 'media',
         title: '媒体介绍',
         chunks: ['media']
