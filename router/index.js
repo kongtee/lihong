@@ -30,6 +30,11 @@ module.exports = [
         chunks: ['media']
     },
     {
+        _html: 'redMemory',
+        title: '红色记忆',
+        chunks: ['redMemory']
+    },
+    {
         _html: 'concat',
         title: '联系我们',
         chunks: ['concat']

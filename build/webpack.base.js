@@ -47,6 +47,7 @@ module.exports = {
         news: './js/news.js',
         newsDetail: './js/newsDetail.js',
         media: './js/media.js',
+        redMemory: './js/redMemory.js',
         concat: './js/concat.js'
     },
     output: {
