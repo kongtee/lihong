@@ -35,6 +35,11 @@ module.exports = [
         chunks: ['redMemory']
     },
     {
+        _html: 'redCulture',
+        title: '红色文创',
+        chunks: ['redCulture']
+    },
+    {
         _html: 'concat',
         title: '联系我们',
         chunks: ['concat']
