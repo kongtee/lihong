@@ -15,6 +15,11 @@ module.exports = [
         chunks: ['jidi']
     },
     {
+        _html: 'program',
+        title: '培训方案',
+        chunks: ['program']
+    },
+    {
         _html: 'news',
         title: '新闻资讯',
         chunks: ['news']

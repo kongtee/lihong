@@ -44,6 +44,7 @@ module.exports = {
         index: './js/index.js',
         school: './js/school.js',
         jidi: './js/jidi.js',
+        program: './js/program.js',
         news: './js/news.js',
         newsDetail: './js/newsDetail.js',
         media: './js/media.js',
