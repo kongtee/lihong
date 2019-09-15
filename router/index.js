@@ -40,6 +40,11 @@ module.exports = [
         chunks: ['redMemory']
     },
     {
+        _html: 'policy',
+        title: '政策解读',
+        chunks: ['policy']
+    },
+    {
         _html: 'redCulture',
         title: '红色文创',
         chunks: ['redCulture']
