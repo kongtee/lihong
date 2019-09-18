@@ -102,11 +102,13 @@ html {
   font-weight: bold;
 }
 
-.nav .nav-item-red:hover .item-red {
+.nav .nav-item-red:hover .item-red,
+.nav .nav-item-news:hover .item-news {
   display: block;
 }
 
-.nav .item-red {
+.nav .item-red,
+.nav .item-news {
   background-color: #9a0a0d;
   position: absolute;
   width: 125px;
@@ -114,7 +116,7 @@ html {
   display: none;
 }
 
-.nav .item-red .item-red-item {
+.nav .item-red .item-item {
   height: 50px;
   line-height: 50px;
   background-color: #9a0a0d;
@@ -122,8 +124,10 @@ html {
   border-top: 1px solid #ba3632;
 }
 
-.nav .item-red .item-red-item:hover,
-.nav .item-red .item-red-item.cur {
+.nav .item-red .item-item:hover,
+.nav .item-red .item-item.cur,
+.nav .item-news .item-item:hover,
+.nav .item-news .item-item.cur {
   color: #e59794;
 }
 
@@ -180,6 +184,14 @@ html {
 .page-nav .cur .page-item-bt {
   background-color: #b60610;
   color: #fff;
+}
+
+.more {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  color: #3b3b3b;
+  font-size: 16px;
 }
 
 /* footer */

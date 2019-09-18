@@ -21,12 +21,32 @@ module.exports = [
     },
     {
         _html: 'news',
-        title: '新闻资讯',
+        title: '时事新闻',
         chunks: ['news']
     },
     {
         _html: 'newsDetail',
-        title: '新闻资讯-详情页',
+        title: '时事新闻-详情页',
+        chunks: ['newsDetail']
+    },
+    {
+        _html: 'trainDynamic',
+        title: '培训动态',
+        chunks: ['news']
+    },
+    {
+        _html: 'trainDyncDetail',
+        title: '培训动态-详情页',
+        chunks: ['newsDetail']
+    },
+    {
+        _html: 'classDynamic',
+        title: '开班培训',
+        chunks: ['news']
+    },
+    {
+        _html: 'classDyncDetail',
+        title: '开班培训-详情页',
         chunks: ['newsDetail']
     },
     {
@@ -38,6 +58,11 @@ module.exports = [
         _html: 'redMemory',
         title: '红色记忆',
         chunks: ['redMemory']
+    },
+    {
+        _html: 'redClass',
+        title: '红色讲堂',
+        chunks: ['redClass']
     },
     {
         _html: 'policy',

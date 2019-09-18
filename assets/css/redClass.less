@@ -1,0 +1,113 @@
+@import "../common/reset";
+@import "../common/pub";
+
+.red-mem {
+  margin: 70px 0;
+}
+
+.red-mem .red-mem-nav {
+  color: #bc352d;
+  font-size: 24px;
+  border-bottom: 2px solid #ecedee;
+}
+
+.red-mem .red-mem-nav span {
+  border-bottom: 3px solid #bc352d;
+}
+
+.red-mem .red-mem-item {
+  padding: 30px 0;
+  border-top: 1px solid #ebebeb;
+  position: relative;
+  overflow: hidden;
+}
+
+.red-mem .red-mem-item-wrap {
+  display: block;
+}
+
+.red-mem .red-mem-item:first-child {
+  border: none;
+}
+
+.red-mem .red-mem-img-wrap {
+  width: 180px;
+  height: 140px;
+  float: left;
+  margin-right: 30px;
+}
+
+.red-mem .red-mem-img {
+  width: 180px;
+  height: 140px;
+}
+
+.red-mem .red-mem-content {
+  float: left;
+  width: 790px;
+}
+
+.red-mem .red-mem-title {
+  color: #3d3d3d;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.red-mem .red-mem-text {
+  color: #666;
+  font-size: 16px;
+  line-height: 24px;
+  height: 95px;
+  overflow: hidden;
+}
+
+.red-mem .red-mem-label {
+  color: #999;
+  font-size: 14px;
+}
+
+.red-mem .red-mem-read-label {
+  padding-left: 40px;
+}
+
+/* 分页 */
+.page-nav {
+  color: #bc352d;
+  margin-bottom: 70px;
+}
+
+.page-nav .page-wrap {
+  text-align: center;
+}
+
+.page-nav .page-list {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.page-nav .page-item {
+  float: left;
+  width: 36px;
+  height: 38px;
+  margin: 0 5px;
+}
+
+.page-nav .page-item-bt {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 38px;
+  background-color: #edeeef;
+  text-align: center;
+  color: #b60610;
+  font-weight: bold;
+}
+
+.page-nav .page-item-bt:hover,
+.page-nav .cur .page-item-bt {
+  background-color: #b60610;
+  color: #fff;
+}

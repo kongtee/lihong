@@ -12,6 +12,10 @@
   margin: 0 0 70px;
 }
 
+.program .main {
+  overflow: visible;
+}
+
 .program .program-title {
   text-align: center;
   margin: 60px 0 40px;
@@ -23,13 +27,18 @@
 
 .program .program-item-wrap {
   position: relative;
-  overflow: hidden;
+  //overflow: hidden;
 }
 
 .program .program-item {
   width: 120px;
   margin-left: 25px;
   float: left;
+}
+
+.program .program-item:hover {
+  transform: scale(1.1);
+  transition: transform .3s;
 }
 
 .program .program-item-img {
