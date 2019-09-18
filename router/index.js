@@ -60,14 +60,39 @@ module.exports = [
         chunks: ['redMemory']
     },
     {
-        _html: 'redClass',
-        title: '红色讲堂',
+        _html: 'redMemoryDetail',
+        title: '红色记忆-详情页',
+        chunks: ['newsDetail']
+    },
+    {
+        _html: 'redStory',
+        title: '红色故事',
         chunks: ['redClass']
+    },
+    {
+        _html: 'redStoryDetail',
+        title: '红色故事-详情页',
+        chunks: ['newsDetail']
+    },
+    {
+        _html: 'russiaSpirit',
+        title: '苏区精神',
+        chunks: ['redClass']
+    },
+    {
+        _html: 'russiaSpiritDetail',
+        title: '苏区精神-详情页',
+        chunks: ['newsDetail']
     },
     {
         _html: 'policy',
         title: '政策解读',
         chunks: ['policy']
+    },
+    {
+        _html: 'policyDetail',
+        title: '政策解读-详情页',
+        chunks: ['newsDetail']
     },
     {
         _html: 'redCulture',
