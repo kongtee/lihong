@@ -45,6 +45,16 @@ module.exports = [
         chunks: ['school']
     },
     {
+        _html: 'techResource',
+        title: '教学资源',
+        chunks: ['news']
+    },
+    {
+        _html: 'techResourceDetail',
+        title: '教学资源-详情页',
+        chunks: ['newsDetail']
+    },
+    {
         _html: 'program',
         title: '培训方案',
         chunks: ['program']
