@@ -10,8 +10,33 @@ module.exports = [
         chunks: ['school']
     },
     {
-        _html: 'jidi',
-        title: '培训基地',
+        _html: 'jidiYanan',
+        title: '延安基地',
+        chunks: ['jidi']
+    },
+    {
+        _html: 'jidiShanghai',
+        title: '上海基地',
+        chunks: ['jidi']
+    },
+    {
+        _html: 'jidiShaoshan',
+        title: '韶山基地',
+        chunks: ['jidi']
+    },
+    {
+        _html: 'jidiJinggangshan',
+        title: '井冈山基地',
+        chunks: ['jidi']
+    },
+    {
+        _html: 'jidiZunyi',
+        title: '遵义基地',
+        chunks: ['jidi']
+    },
+    {
+        _html: 'jidiHongqiqu',
+        title: '红旗渠基地',
         chunks: ['jidi']
     },
     {

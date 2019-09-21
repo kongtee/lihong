@@ -102,13 +102,11 @@ html {
   font-weight: bold;
 }
 
-.nav .nav-item-red:hover .item-red,
-.nav .nav-item-news:hover .item-news {
+.nav .nav-item:hover .nav-item-list {
   display: block;
 }
 
-.nav .item-red,
-.nav .item-news {
+.nav .nav-item-list {
   background-color: #9a0a0d;
   position: absolute;
   width: 125px;
@@ -116,8 +114,7 @@ html {
   display: none;
 }
 
-.nav .item-red .item-item,
-.nav .item-news .item-item {
+.nav .nav-item-list .item-item {
   height: 50px;
   line-height: 50px;
   background-color: #9a0a0d;
@@ -125,23 +122,21 @@ html {
   border-top: 1px solid #ba3632;
 }
 
-.nav .item-red .item-item:hover,
-.nav .item-red .item-item.cur,
-.nav .item-news .item-item:hover,
-.nav .item-news .item-item.cur {
+.nav .nav-item-list .item-item:hover,
+.nav .nav-item-list .item-item.cur {
   color: #e59794;
 }
 
 /* 广告 */
 .ad {
-  height: 400px;
+  height: 380px;
   position: relative;
   overflow: hidden;
 }
 
 .ad .ad-bg {
   position: absolute;
-  height: 400px;
+  height: 380px;
   top: 0;
   left: 50%;
   margin-left: -960px;
@@ -185,6 +180,16 @@ html {
 .page-nav .cur .page-item-bt {
   background-color: #b60610;
   color: #fff;
+}
+
+.content-title {
+  color: #bc352d;
+  font-size: 24px;
+  border-bottom: 2px solid #ecedee;
+}
+
+.content-title span {
+  border-bottom: 3px solid #bc352d;
 }
 
 .more {
