@@ -40,6 +40,11 @@ module.exports = [
         chunks: ['jidi']
     },
     {
+        _html: 'schoolDetail',
+        title: '学校详情',
+        chunks: ['school']
+    },
+    {
         _html: 'program',
         title: '培训方案',
         chunks: ['program']
