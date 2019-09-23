@@ -60,6 +60,26 @@ module.exports = [
         chunks: ['program']
     },
     {
+        _html: 'special',
+        title: '培训专题',
+        chunks: ['news']
+    },
+    {
+        _html: 'specialDetail',
+        title: '培训专题-详情页',
+        chunks: ['newsDetail']
+    },
+    {
+        _html: 'programClass',
+        title: '培训课程',
+        chunks: ['policy']
+    },
+    {
+        _html: 'programClassDetail',
+        title: '培训课程-详情页',
+        chunks: ['newsDetail']
+    },
+    {
         _html: 'news',
         title: '时事新闻',
         chunks: ['news']
