@@ -21,7 +21,7 @@ function getHtmlArray(moduleExportsPlugins) {
             template: `./${name}.html`,
             // favicon: './src/assets/images/public/favicon.ico',
             title,
-            inject: true,
+            inject: 'head',
             hash: true, // 开启hash
             chunks, // 页面要引入的包
             minify: process.env.NODE_ENV === 'development' ? false : {
@@ -34,7 +34,7 @@ function getHtmlArray(moduleExportsPlugins) {
 
     // 循环创建模板配置
     router.forEach((element) => {
-        const {_html, chunks, title} = element;
+        const { _html, chunks, title } = element;
         moduleExportsPlugins.push(new HtmlWebpackPlugin(getHtmlConfig(_html, chunks, title)));
     })
 }
